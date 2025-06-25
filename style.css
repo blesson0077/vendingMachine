@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+    background: #f4f4f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.vending-machine {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.machine-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 28px;
+    width: 100%;
+}
+
+.item {
+    background: #e9ecef;
+    border-radius: 8px;
+    padding: 16px 8px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #dde3ea;
+}
+
+.item-name {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.item-price {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.balance-section {
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 22px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #005fa3;
+}
+
+.message {
+    margin-top: 18px;
+    color: #d32f2f;
+    font-weight: 500;
+    min-height: 24px;
+    text-align: center;
+}
